@@ -1,0 +1,14 @@
+module comparador (a, b, s);
+	input [4:0] a, b;
+	output s;
+	
+	wire x0, x1, x2, x3, x4;
+	
+	xnor xnor0 (x0, a[0], b[0]);
+	xnor xnor1 (x1, a[1], b[1]);
+	xnor xnor2 (x2, a[2], b[2]);
+	xnor xnor3 (x3, a[3], b[3]);
+	xnor xnor4 (x4, a[4], b[4]);
+	and and0 (s, x0, x1, x2, x3, x4);
+	
+endmodule

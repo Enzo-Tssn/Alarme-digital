@@ -1,0 +1,82 @@
+module teclado_conta (lin, col, bot_press, s);
+
+	input [3:0] lin, col;
+	input bot_press;
+	output [11:0] s;
+	
+	reg [3:0] uni, dez, cent;
+	reg [2:0] aux;
+	
+	
+	always @(posedge bot_press)
+	begin
+		aux = aux + 1;
+		if (lin == 1 and col == 2) //"Sim"
+		begin
+			aux = 0; 
+			assign s = {cent, dez, uni};
+		end
+		if (lin == 1 and col == 4) //Zero
+		begin
+			if (aux == 0) begin uni = 0; end
+			if (aux == 1) begin dez = 0; end
+			if (aux == 2) begin cent = 0; end
+		end
+		if (lin == 8 and col == 8) //Um
+		begin
+			if (aux == 0) begin uni = 0; end
+			if (aux == 1) begin dez = 0; end
+			if (aux == 2) begin cent = 0; end
+		end
+		if (lin == 8 and col == 4) //Dois
+		begin
+			if (aux == 0) begin uni = 0; end
+			if (aux == 1) begin dez = 0; end
+			if (aux == 2) begin cent = 0; end
+		end
+		if (lin == 1 and col == 4) //Tres
+		begin
+			if (aux == 0) begin uni = 0; end
+			if (aux == 1) begin dez = 0; end
+			if (aux == 2) begin cent = 0; end
+		end
+		if (lin == 1 and col == 4) //Quatro
+		begin
+			if (aux == 0) begin uni = 0; end
+			if (aux == 1) begin dez = 0; end
+			if (aux == 2) begin cent = 0; end
+		end
+		if (lin == 1 and col == 4) //Cinco
+		begin
+			if (aux == 0) begin uni = 0; end
+			if (aux == 1) begin dez = 0; end
+			if (aux == 2) begin cent = 0; end
+		end
+		if (lin == 1 and col == 4) //Seis
+		begin
+			if (aux == 0) begin uni = 0; end
+			if (aux == 1) begin dez = 0; end
+			if (aux == 2) begin cent = 0; end
+		end
+		if (lin == 1 and col == 4) //Sete
+		begin
+			if (aux == 0) begin uni = 0; end
+			if (aux == 1) begin dez = 0; end
+			if (aux == 2) begin cent = 0; end
+		end
+		if (lin == 1 and col == 4) //Oito
+		begin
+			if (aux == 0) begin uni = 0; end
+			if (aux == 1) begin dez = 0; end
+			if (aux == 2) begin cent = 0; end
+		end
+		if (lin == 1 and col == 4) //Nove
+		begin
+			if (aux == 0) begin uni = 0; end
+			if (aux == 1) begin dez = 0; end
+			if (aux == 2) begin cent = 0; end
+		end
+	end
+	
+
+endmodule

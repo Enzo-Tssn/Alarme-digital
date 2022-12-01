@@ -1,0 +1,30 @@
+module tb_comparador;
+  
+	reg [11:0] a, b;  
+	wire s;  
+	integer i;
+	
+	//Instancia a unidade a ser testada   
+	comparador uut(
+		.a(a)
+		.b(b)
+		.s(s)
+	);
+	
+	//Teste para dois casos: a = b e a != b
+	initial begin  
+		for (i = 0;i < 16;i = i+1)  
+      begin   
+           a = i;  
+           b = i + 1;  
+           #20;  
+      end   
+      for (i = 0;i < 16;i = i+1)  
+      begin   
+           a = i;  
+           b = i;  
+           #20;  
+      end     
+	end
+   
+endmodule
