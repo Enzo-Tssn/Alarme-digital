@@ -1,4 +1,11 @@
-# Alarme digital
+## Alarme digital
  
 O projeto se trata de um relógio digital, que tem como principal característica funcionar como um alarme, emitindo um sinal sonoro em determinado horário (ou horários), a critério do usuário.
 O diferencial, no entanto, é que, se for escolhida a opção “despertador”, o alarme virá acompanhado de uma uma operação matemática a ser resolvida, e só deixará de tocar quando o usuário acertar a resposta da conta.
+##
+
+### Projetado por:
+- Bruno Marciano Santos (13684710)
+- Enzo Tassini das Neves (13682552)
+- João Felipe Pereira Carvalho (11808189)
+- Mauro Martins Pereira Junior (13679798)
