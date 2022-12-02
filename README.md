@@ -7,7 +7,9 @@ O diferencial, no entanto, é que, se for escolhida a opção “despertador”,
 
 ### Simulações
 
-Foram escritos testbenches para alguns dos módulos mais essenciais, que se mostraram muito úteis ainda enquanto era feito o projeto, pois garantiam o funcionamento dos módulos implementados e permitiam que se pudesse continuar o desenvolvimento com mais segurança. Nenhuma simulação requer qualquer tipo de "tratamento especial", como inputs por parte do usúario ou leitura de algum arquivo específico: as entradas dos módulos, no geral, foram definidas dentro de seus próprios testbenches.
+Foram escritos testbenches para alguns dos módulos mais essenciais, que se mostraram muito úteis ainda enquanto era feito o projeto, pois garantiam o funcionamento dos módulos implementados e permitiam que se pudesse continuar o desenvolvimento com mais segurança. Seus arquivos são da forma **_tb_nomedomódulo.v_**.
+
+Nenhuma simulação requer qualquer tipo de "tratamento especial", como inputs por parte do usúario ou leitura de algum arquivo específico; as entradas dos módulos, no geral, foram definidas dentro de seus próprios testbenches. 
 
 Houve a tentativa de, ao fim do desenvolvimento, escrever um único e grande testbench, que abordasse todos os aspectos do projeto e o simulasse como um conjunto. No entanto, dificuldades na implementação impediram que a intenção do grupo se concretizasse. 
 
