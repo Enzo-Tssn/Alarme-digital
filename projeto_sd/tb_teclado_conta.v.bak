@@ -1,0 +1,33 @@
+module tb_teclado_conta;
+
+	//Inputs
+	reg [3:0] lin, col;
+	reg bot_press;
+	
+	//Output
+	wire [11:0] s;
+	
+	teclado_conta uut (
+		.lin(lin),
+		.col(col),
+		.bot_press(bot_press),
+		.s(s)
+	);
+	
+	always begin
+		bot_press = 1'b1; #10;
+		bot_press = 1'b0; #10;
+	end
+	
+	initial begin
+		lin = 8; col = 4; #20;
+		lin = 4; col = 2; #20; //Valores quaisquer para teste
+		lin = 2; col = 8; #20;
+		lin = 1; col = 2; #20; //Relativo ao botao "Enter"
+		lin = 4; col = 8; #20;
+		lin = 2; col = 2; #20; //Valores quaisquer para teste
+		lin = 8; col = 2; #20;
+		lin = 1; col = 2; #20; //Relativo ao botao "Enter"
+		$monitor("%x", s);
+		$stop;
+	end
