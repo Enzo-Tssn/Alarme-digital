@@ -1,6 +1,6 @@
 Analysis & Synthesis report for projeto_sd
-Thu Dec  1 22:56:12 2022
-Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+Thu Dec  1 22:46:51 2022
+Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
 ---------------------
@@ -10,17 +10,8 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Port Connectivity Checks: "somador_bcd:comb_4"
- 11. Port Connectivity Checks: "somador_bcd:comb_3"
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
- 15. Analysis & Synthesis Suppressed Messages
+  5. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -44,27 +35,22 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Dec  1 22:56:12 2022          ;
-; Quartus Prime Version           ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
-; Revision Name                   ; projeto_sd                                     ;
-; Top-level Entity Name           ; soma_compara                                   ;
-; Family                          ; Cyclone V                                      ;
-; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 26                                             ;
-; Total pins                      ; 54                                             ;
-; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0                                              ;
-; Total DSP Blocks                ; 0                                              ;
-; Total HSSI RX PCSs              ; 0                                              ;
-; Total HSSI PMA RX Deserializers ; 0                                              ;
-; Total HSSI TX PCSs              ; 0                                              ;
-; Total HSSI PMA TX Serializers   ; 0                                              ;
-; Total PLLs                      ; 0                                              ;
-; Total DLLs                      ; 0                                              ;
-+---------------------------------+------------------------------------------------+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Thu Dec  1 22:46:51 2022           ;
+; Quartus Prime Version       ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
+; Revision Name               ; projeto_sd                                  ;
+; Top-level Entity Name       ; soma_compara                                ;
+; Family                      ; Cyclone V                                   ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -159,158 +145,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                            ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                              ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
-; soma_compara.v                   ; yes             ; User Verilog HDL File  ; C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v   ;         ;
-; somador_bcd.v                    ; yes             ; User Verilog HDL File  ; C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/somador_bcd.v    ;         ;
-; comparador.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/comparador.v     ;         ;
-; sete_segmentos.v                 ; yes             ; User Verilog HDL File  ; C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/sete_segmentos.v ;         ;
-; teclado_conta.v                  ; yes             ; User Verilog HDL File  ; C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/teclado_conta.v  ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
-
-
-+---------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                   ;
-+---------------------------------------------+-----------------+
-; Resource                                    ; Usage           ;
-+---------------------------------------------+-----------------+
-; Estimate of Logic utilization (ALMs needed) ; 44              ;
-;                                             ;                 ;
-; Combinational ALUT usage for logic          ; 76              ;
-;     -- 7 input functions                    ; 0               ;
-;     -- 6 input functions                    ; 10              ;
-;     -- 5 input functions                    ; 2               ;
-;     -- 4 input functions                    ; 51              ;
-;     -- <=3 input functions                  ; 13              ;
-;                                             ;                 ;
-; Dedicated logic registers                   ; 26              ;
-;                                             ;                 ;
-; I/O pins                                    ; 54              ;
-;                                             ;                 ;
-; Total DSP Blocks                            ; 0               ;
-;                                             ;                 ;
-; Maximum fan-out node                        ; bot_press~input ;
-; Maximum fan-out                             ; 26              ;
-; Total fan-out                               ; 465             ;
-; Average fan-out                             ; 2.21            ;
-+---------------------------------------------+-----------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------+----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                ; Entity Name    ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------+----------------+--------------+
-; |soma_compara              ; 76 (0)              ; 26 (0)                    ; 0                 ; 0          ; 54   ; 0            ; |soma_compara                      ; soma_compara   ; work         ;
-;    |comparador:comb_6|     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |soma_compara|comparador:comb_6    ; comparador     ; work         ;
-;    |sete_segmentos:a0|     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |soma_compara|sete_segmentos:a0    ; sete_segmentos ; work         ;
-;    |sete_segmentos:a1|     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |soma_compara|sete_segmentos:a1    ; sete_segmentos ; work         ;
-;    |sete_segmentos:b0|     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |soma_compara|sete_segmentos:b0    ; sete_segmentos ; work         ;
-;    |sete_segmentos:b1|     ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |soma_compara|sete_segmentos:b1    ; sete_segmentos ; work         ;
-;    |somador_bcd:comb_3|    ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |soma_compara|somador_bcd:comb_3   ; somador_bcd    ; work         ;
-;    |somador_bcd:comb_4|    ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |soma_compara|somador_bcd:comb_4   ; somador_bcd    ; work         ;
-;    |teclado_conta:comb_5|  ; 30 (30)             ; 26 (26)                   ; 0                 ; 0          ; 0    ; 0            ; |soma_compara|teclado_conta:comb_5 ; teclado_conta  ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------+----------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 26    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 24    ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
-; 12:1               ; 2 bits    ; 16 LEs        ; 14 LEs               ; 2 LEs                  ; Yes        ; |soma_compara|teclado_conta:comb_5|cent[3] ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 14 LEs               ; 2 LEs                  ; Yes        ; |soma_compara|teclado_conta:comb_5|cent[1] ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 14 LEs               ; 2 LEs                  ; Yes        ; |soma_compara|teclado_conta:comb_5|uni[0]  ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 14 LEs               ; 2 LEs                  ; Yes        ; |soma_compara|teclado_conta:comb_5|uni[1]  ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 14 LEs               ; 2 LEs                  ; Yes        ; |soma_compara|teclado_conta:comb_5|dez[0]  ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 14 LEs               ; 2 LEs                  ; Yes        ; |soma_compara|teclado_conta:comb_5|dez[1]  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "somador_bcd:comb_4"                                                                                                                                                        ;
-+-----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                                                                                                               ;
-+-----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; carry_out ; Output ; Warning  ; Output or bidir port (1 bits) is smaller than the port expression (4 bits) it drives.  The 3 most-significant bit(s) in the port expression will be connected to GND. ;
-+-----------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "somador_bcd:comb_3"                                                                                                                                                                       ;
-+--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port         ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; carry_in     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; carry_in[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
-+--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_ff             ; 26                          ;
-;     ENA               ; 24                          ;
-;     plain             ; 2                           ;
-; arriav_lcell_comb     ; 100                         ;
-;     arith             ; 11                          ;
-;         0 data inputs ; 2                           ;
-;         2 data inputs ; 8                           ;
-;         4 data inputs ; 1                           ;
-;     normal            ; 89                          ;
-;         1 data inputs ; 24                          ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 50                          ;
-;         5 data inputs ; 2                           ;
-;         6 data inputs ; 10                          ;
-; boundary_port         ; 54                          ;
-;                       ;                             ;
-; Max LUT depth         ; 4.90                        ;
-; Average LUT depth     ; 2.63                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
 
 
 +-------------------------------+
@@ -318,97 +161,77 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Thu Dec  1 22:55:53 2022
+    Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+    Info: Processing started: Thu Dec  1 22:46:29 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off projeto_sd -c projeto_sd
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file soma_compara.v
-    Info (12023): Found entity 1: soma_compara File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 1
+    Info (12023): Found entity 1: soma_compara File: C:/Users/usuário/Downloads/Projeto_SD/projeto_sd/soma_compara.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file somador_bcd.v
-    Info (12023): Found entity 1: somador_bcd File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/somador_bcd.v Line: 1
+    Info (12023): Found entity 1: somador_bcd File: C:/Users/usuário/Downloads/Projeto_SD/projeto_sd/somador_bcd.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file comparador.v
-    Info (12023): Found entity 1: comparador File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/comparador.v Line: 1
+    Info (12023): Found entity 1: comparador File: C:/Users/usuário/Downloads/Projeto_SD/projeto_sd/comparador.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sete_segmentos.v
-    Info (12023): Found entity 1: sete_segmentos File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/sete_segmentos.v Line: 1
+    Info (12023): Found entity 1: sete_segmentos File: C:/Users/usuário/Downloads/Projeto_SD/projeto_sd/sete_segmentos.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_somador_bcd.v
-    Info (12023): Found entity 1: tb_somador_bcd File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/tb_somador_bcd.v Line: 1
+    Info (12023): Found entity 1: tb_somador_bcd File: C:/Users/usuário/Downloads/Projeto_SD/projeto_sd/tb_somador_bcd.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file teclado_conta.v
-    Info (12023): Found entity 1: teclado_conta File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/teclado_conta.v Line: 1
+    Info (12023): Found entity 1: teclado_conta File: C:/Users/usuário/Downloads/Projeto_SD/projeto_sd/teclado_conta.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tb_comparador.v
-    Info (12023): Found entity 1: tb_comparador File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/tb_comparador.v Line: 1
-Warning (12019): Can't analyze file -- file ../../../../../AMD/teclado_relogio.v is missing
-Warning (12019): Can't analyze file -- file ../../../../../AMD/DFlipFlop.v is missing
-Warning (12019): Can't analyze file -- file ../../../../../AMD/counter_mod10.v is missing
-Warning (12019): Can't analyze file -- file ../../../../../AMD/DFlipFlop_4bits.v is missing
-Warning (12019): Can't analyze file -- file ../../../../../AMD/clock_gen.v is missing
-Warning (12019): Can't analyze file -- file ../../../../../AMD/Relogio.v is missing
-Info (12021): Found 1 design units, including 1 entities, in source file tb_sete_segmentos.v
-    Info (12023): Found entity 1: tb_sete_segmentos File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/tb_sete_segmentos.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file tb_teclado_conta.v
-    Info (12023): Found entity 1: tb_teclado_conta File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/tb_teclado_conta.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file tb_dflipflop_4bits.v
-    Info (12023): Found entity 1: tb_DFlipFlop_4bits File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/tb_DFlipFlop_4bits.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file tb_dflipflop.v
-    Info (12023): Found entity 1: tb_DFlipFlop File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/tb_DFlipFlop.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file randomnumber1.v
-    Info (12023): Found entity 1: randomNumber1 File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/randomNumber1.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file tb_randomnumber1.v
-    Info (12023): Found entity 1: tb_randomNumber1 File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/tb_randomNumber1.v Line: 1
-Critical Warning (10846): Verilog HDL Instantiation warning at soma_compara.v(20): instance has no name File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 20
-Critical Warning (10846): Verilog HDL Instantiation warning at soma_compara.v(21): instance has no name File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 21
-Critical Warning (10846): Verilog HDL Instantiation warning at soma_compara.v(24): instance has no name File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 24
-Critical Warning (10846): Verilog HDL Instantiation warning at soma_compara.v(28): instance has no name File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 28
-Info (12127): Elaborating entity "soma_compara" for the top level hierarchy
-Info (12128): Elaborating entity "sete_segmentos" for hierarchy "sete_segmentos:a0" File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 11
-Info (12128): Elaborating entity "somador_bcd" for hierarchy "somador_bcd:comb_3" File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 20
-Warning (10230): Verilog HDL assignment warning at somador_bcd.v(17): truncated value with size 32 to match size of target (5) File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/somador_bcd.v Line: 17
-Info (12128): Elaborating entity "teclado_conta" for hierarchy "teclado_conta:comb_5" File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 24
-Warning (10230): Verilog HDL assignment warning at teclado_conta.v(23): truncated value with size 32 to match size of target (2) File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/teclado_conta.v Line: 23
-Info (12128): Elaborating entity "comparador" for hierarchy "comparador:comb_6" File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 28
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "num_somado[11]" is missing source, defaulting to GND File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 16
-    Warning (12110): Net "num_somado[10]" is missing source, defaulting to GND File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 16
-    Warning (12110): Net "num_somado[9]" is missing source, defaulting to GND File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 16
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "num_somado[11]" is missing source, defaulting to GND File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 16
-    Warning (12110): Net "num_somado[10]" is missing source, defaulting to GND File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 16
-    Warning (12110): Net "num_somado[9]" is missing source, defaulting to GND File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 16
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "num_somado[11]" is missing source, defaulting to GND File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 16
-    Warning (12110): Net "num_somado[10]" is missing source, defaulting to GND File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 16
-    Warning (12110): Net "num_somado[9]" is missing source, defaulting to GND File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 16
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "num_somado[11]" is missing source, defaulting to GND File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 16
-    Warning (12110): Net "num_somado[10]" is missing source, defaulting to GND File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 16
-    Warning (12110): Net "num_somado[9]" is missing source, defaulting to GND File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 16
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "num_somado[11]" is missing source, defaulting to GND File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 16
-    Warning (12110): Net "num_somado[10]" is missing source, defaulting to GND File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 16
-    Warning (12110): Net "num_somado[9]" is missing source, defaulting to GND File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 16
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "num_somado[11]" is missing source, defaulting to GND File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 16
-    Warning (12110): Net "num_somado[10]" is missing source, defaulting to GND File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 16
-    Warning (12110): Net "num_somado[9]" is missing source, defaulting to GND File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/soma_compara.v Line: 16
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/output_files/projeto_sd.map.smsg
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 142 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 25 input pins
-    Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 88 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 38 warnings
-    Info: Peak virtual memory: 4816 megabytes
-    Info: Processing ended: Thu Dec  1 22:56:12 2022
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:32
+    Info (12023): Found entity 1: tb_comparador File: C:/Users/usuário/Downloads/Projeto_SD/projeto_sd/tb_comparador.v Line: 1
+Error (10170): Verilog HDL syntax error at teclado_relogio.v(8) near text: "if";  expecting "endmodule". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/AMD/teclado_relogio.v Line: 8
+Error (10112): Ignored design unit "teclado_relogio" at teclado_relogio.v(1) due to previous errors File: C:/AMD/teclado_relogio.v Line: 1
+Info (12021): Found 0 design units, including 0 entities, in source file /amd/teclado_relogio.v
+Info (12021): Found 1 design units, including 1 entities, in source file /amd/dflipflop.v
+    Info (12023): Found entity 1: DFlipFlop File: C:/AMD/DFlipFlop.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /amd/counter_mod10.v
+    Info (12023): Found entity 1: counter_mod10 File: C:/AMD/counter_mod10.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /amd/dflipflop_4bits.v
+    Info (12023): Found entity 1: DFlipFlop_4bits File: C:/AMD/DFlipFlop_4bits.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /amd/clock_gen.v
+    Info (12023): Found entity 1: clock_gen File: C:/AMD/clock_gen.v Line: 1
+Error (10170): Verilog HDL syntax error at Relogio.v(30) near text: "wire";  expecting "end". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/AMD/Relogio.v Line: 30
+Error (10170): Verilog HDL syntax error at Relogio.v(31) near text: "U36";  expecting "<=", or "=". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/AMD/Relogio.v Line: 31
+Error (10170): Verilog HDL syntax error at Relogio.v(32) near text: "U14";  expecting "<=", or "=". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/AMD/Relogio.v Line: 32
+Error (10170): Verilog HDL syntax error at Relogio.v(34) near text: "always";  expecting "end". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/AMD/Relogio.v Line: 34
+Warning (10261): Verilog HDL Event Control warning at Relogio.v(34): Event Control contains a complex event expression File: C:/AMD/Relogio.v Line: 34
+Error (10170): Verilog HDL syntax error at Relogio.v(37) near text: "wire";  expecting "end". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/AMD/Relogio.v Line: 37
+Error (10170): Verilog HDL syntax error at Relogio.v(38) near text: "U37";  expecting "<=", or "=". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/AMD/Relogio.v Line: 38
+Error (10170): Verilog HDL syntax error at Relogio.v(39) near text: "U12";  expecting "<=", or "=". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/AMD/Relogio.v Line: 39
+Error (10170): Verilog HDL syntax error at Relogio.v(41) near text: "always";  expecting "end". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/AMD/Relogio.v Line: 41
+Warning (10261): Verilog HDL Event Control warning at Relogio.v(41): Event Control contains a complex event expression File: C:/AMD/Relogio.v Line: 41
+Error (10170): Verilog HDL syntax error at Relogio.v(44) near text: "wire";  expecting "end". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/AMD/Relogio.v Line: 44
+Error (10170): Verilog HDL syntax error at Relogio.v(45) near text: "U38";  expecting "<=", or "=". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/AMD/Relogio.v Line: 45
+Error (10170): Verilog HDL syntax error at Relogio.v(46) near text: "U10";  expecting "<=", or "=". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/AMD/Relogio.v Line: 46
+Error (10170): Verilog HDL syntax error at Relogio.v(48) near text: "always";  expecting "end". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/AMD/Relogio.v Line: 48
+Warning (10261): Verilog HDL Event Control warning at Relogio.v(48): Event Control contains a complex event expression File: C:/AMD/Relogio.v Line: 48
+Error (10170): Verilog HDL syntax error at Relogio.v(51) near text: "wire";  expecting "end". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/AMD/Relogio.v Line: 51
+Error (10170): Verilog HDL syntax error at Relogio.v(52) near text: "U39";  expecting "<=", or "=". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/AMD/Relogio.v Line: 52
+Error (10170): Verilog HDL syntax error at Relogio.v(53) near text: "U8";  expecting "<=", or "=". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/AMD/Relogio.v Line: 53
+Error (10170): Verilog HDL syntax error at Relogio.v(55) near text: "always";  expecting "end". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/AMD/Relogio.v Line: 55
+Warning (10261): Verilog HDL Event Control warning at Relogio.v(55): Event Control contains a complex event expression File: C:/AMD/Relogio.v Line: 55
+Error (10170): Verilog HDL syntax error at Relogio.v(58) near text: "wire";  expecting "end". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/AMD/Relogio.v Line: 58
+Error (10170): Verilog HDL syntax error at Relogio.v(59) near text: "U40";  expecting "<=", or "=". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/AMD/Relogio.v Line: 59
+Error (10170): Verilog HDL syntax error at Relogio.v(60) near text: "U6";  expecting "<=", or "=". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/AMD/Relogio.v Line: 60
+Info (12021): Found 0 design units, including 0 entities, in source file /amd/relogio.v
+Info (12021): Found 1 design units, including 1 entities, in source file /amd/clock_gen1.v
+    Info (12023): Found entity 1: clock_gen1 File: C:/AMD/clock_gen1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /amd/compare_4bit.v
+    Info (12023): Found entity 1: compare_4bit File: C:/AMD/compare_4bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /amd/compare_1bit.v
+    Info (12023): Found entity 1: compare_1bit File: C:/AMD/compare_1bit.v Line: 1
+Info (144001): Generated suppressed messages file C:/Users/usuário/Downloads/Projeto_SD/projeto_sd/output_files/projeto_sd.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 21 errors, 5 warnings
+    Error: Peak virtual memory: 4777 megabytes
+    Error: Processing ended: Thu Dec  1 22:46:51 2022
+    Error: Elapsed time: 00:00:22
+    Error: Total CPU time (on all processors): 00:00:24
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/output_files/projeto_sd.map.smsg.
+The suppressed messages can be found in C:/Users/usuário/Downloads/Projeto_SD/projeto_sd/output_files/projeto_sd.map.smsg.
 
 

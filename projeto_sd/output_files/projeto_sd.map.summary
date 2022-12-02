@@ -1,17 +1,12 @@
-Analysis & Synthesis Status : Successful - Thu Dec  1 22:56:12 2022
-Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+Analysis & Synthesis Status : Failed - Thu Dec  1 22:46:51 2022
+Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 Revision Name : projeto_sd
 Top-level Entity Name : soma_compara
 Family : Cyclone V
-Logic utilization (in ALMs) : N/A
-Total registers : 26
-Total pins : 54
-Total virtual pins : 0
-Total block memory bits : 0
-Total DSP Blocks : 0
-Total HSSI RX PCSs : 0
-Total HSSI PMA RX Deserializers : 0
-Total HSSI TX PCSs : 0
-Total HSSI PMA TX Serializers : 0
-Total PLLs : 0
-Total DLLs : 0
+Logic utilization (in ALMs) : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total block memory bits : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge
+Total DLLs : N/A until Partition Merge

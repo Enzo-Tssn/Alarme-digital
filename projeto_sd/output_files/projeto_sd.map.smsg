@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at randomNumber1.v(8): always construct contains both blocking and non-blocking assignments File: C:/Users/Enzo/Documents/GitHub/Alarme-digital/projeto_sd/randomNumber1.v Line: 8
+Warning (10268): Verilog HDL information at DFlipFlop.v(6): always construct contains both blocking and non-blocking assignments File: C:/AMD/DFlipFlop.v Line: 6
